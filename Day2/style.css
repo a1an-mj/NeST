@@ -1,6 +1,6 @@
-body{
+/* body{
     background-color: #000000;
-}
+} */
 .carousel-caption{
     text-align: left;
 }
@@ -43,3 +43,30 @@ body{
     width: 95%;
     text-align: left;
 }
+
+.containers{
+    margin: 20px auto;
+}
+
+.containers h1{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 67, 67);
+    text-align: center;
+}
+
+.btn-primary{
+    background-color: rgb(255, 67, 67);
+    border: none;
+    border-radius: 20px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly scale up the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  }
