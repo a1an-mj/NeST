@@ -1,0 +1,22 @@
+
+.title {
+    position: relative;
+  
+}
+
+.title img {
+    position: absolute;
+    object-fit: cover;
+}
+
+.title h1{
+    position: absolute;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 4px #000000;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 26rem;
+    z-index: 10; /* Bring the text in front of the image */
+    text-transform: uppercase;
+}
