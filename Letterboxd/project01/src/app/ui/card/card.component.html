@@ -1,0 +1,53 @@
+<div class="flex items-center justify-center mt-5">
+  <div class="mx-auto bg-white rounded-3xl shadow-xl">
+    <div class="grid rounded-3xl max-w-[360px] shadow-sm bg-slate-100 flex-col">
+      <img
+        src="{{data.thumbnail}}"
+        width="360"
+        height="570"
+        class="rounded-t-3xl justify-center h-[570px] object-cover object-top"
+        alt="{{data.title || 'Movie Image'}}"
+        loading="lazy"
+      />
+
+      <div class="group p-5 grid z-10 w-[360px] h-[200px]">
+        <a
+          routerLink="product/{{data.id}}"
+          class="group-hover:text-cyan-700 font-bold md:text-2xl line-clamp-2"
+        >
+          {{data.title || 'Untitled'}}
+        </a>
+        <span class="text-slate-400 pt-2 font-semibold">
+          ({{data.releaseYear || 'N/A'}})
+        </span>
+
+        <div class="grid-cols-2 flex group justify-between">
+          <div class="font-black flex flex-col">
+            <span class="text-yellow-500 text-xl">RATING</span>
+            <span class="text-3xl flex gap-x-1 items-center group-hover:text-yellow-600">
+              {{data.rating || 'N/A'}}
+              <svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="..." fill="#eab308" />
+              </svg>
+            </span>
+          </div>
+          <div class="flex flex-col items-end">
+            <div class="h-7">
+              <span class="text-3xl font-bold gap-x-2 text-slate-300">
+                #{{data.id || '---'}}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

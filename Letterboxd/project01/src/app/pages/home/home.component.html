@@ -1,0 +1,9 @@
+<app-nav></app-nav>
+<div class="container bg-gray-900 mx-auto">
+    <div class="flex flex-wrap gap-3">
+        @for(item of value; track item.id){
+            <app-card [data]="item" class="transform transition-transform duration-200 hover:translate-y-[-10px]"></app-card>
+        }
+        
+    </div>
+</div>

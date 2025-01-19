@@ -1,0 +1,16 @@
+<app-nav></app-nav>
+<div class="w-full">
+    <div class="w-full">
+        @for(item of value; track item.id){
+            <!-- <app-card [data]="item" class="transform transition-transform duration-200 hover:translate-y-[-10px]"></app-card> -->
+
+            @if(item.id==m){
+                <app-info [data]="item"></app-info>
+                
+
+            }
+            
+        }
+        
+    </div>
+</div>

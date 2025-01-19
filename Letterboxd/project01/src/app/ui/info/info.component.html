@@ -1,0 +1,60 @@
+<div class="min-h-screen bg-gray-900 text-white">
+    <!-- Hero Banner -->
+    <div class="relative h-[500px] w-full">
+      <div class="absolute inset-0">
+        <img 
+          src="{{data.images}}"
+          [alt]="data.movieTitle"
+          class="w-[1250px] h-full object-cover object-top m-auto"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+      </div>
+    </div>
+  
+    <!-- Content Section -->
+    <div class="relative -mt-32 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-8">
+          <!-- Poster -->
+          <div class="flex-shrink-0">
+            <img 
+              src="{{data.thumbnail}}" alt="{{data.title}}"
+              class="w-72 rounded-lg shadow-xl"
+            />
+            
+            <!-- Engagement Stats -->
+            <div class="mt-4 flex gap-3 text-sm text-gray-400">
+                <span>⭐ {{data.rating}}</span>
+                <span>👁 {{data.runtime}}</span>
+            </div>
+          </div>
+  
+          <!-- Movie Details -->
+          <div class="flex-1">
+            <h1 class="text-4xl font-bold mb-2">{{data.title}}</h1>
+            <p class="text-gray-400 mb-4">
+              {{data.releaseYear}} • {{data.title}}
+            </p>
+  
+            <div class="mb-6">
+              <p class="text-sm text-gray-400 mb-2">Directed by</p>
+              <p class="text-lg">{{data.director}}</p>
+            </div>
+  
+  
+            <!-- Description -->
+            <div class="mb-8">
+              <h2 class="text-xl uppercase tracking-wide text-gray-400 mb-4">
+                Synopsis
+              </h2>
+              <p class="text-gray-300 leading-relaxed">
+                {{data.description}}
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
